@@ -2,12 +2,27 @@
 <html>
 	<head>
 		<title> Test</title>
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js" />
+		
+		<script>		
+		$(document).ready(function () {	
+		$("#hide").click(function(){
+		$("#box").hide();
+		});		
+		});		
+		</script>
+		
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+		<style>
+		#box{
+		background-color:gray;
+		}
+		</style>
 	</head>	
 	
 	<body>
-		<div id="wrap">
-		<span>testest</span>
+		<div id="box">
+		<h1>Jquery test</h1>
 		
 		<span>testest</span>
 		<p>added on the website</p>
@@ -17,12 +32,13 @@
 		<span>update form website</span>
 		
 		<span>update form notepad++</span>
+		</div>
+		<p>controls</p>
 		<ul>
 			<li id="hide"> hide</li>
 			<li id="show">show</li>
 			<li id="slideup">slide up</li>
-			<li id="slidedown">slide down</li>
-			
+			<li id="slidedown">slide down</li>			
 		</ul>
 	
 	</body>
